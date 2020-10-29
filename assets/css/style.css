@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 3fr;
+    grid-template-areas: 
+                        "header"
+                        "main";
+}
+.component{
+    width: 320px;
+    margin: auto;
+}
+label{
+    margin-bottom: 15px;
+}
+input{
+    margin-bottom: 15px;
+}
+small{
+    display: none;
+    margin-bottom: 15px;
+}
+input:valid+small+small{
+    display: inline;
+    color: green;
+}
+input:invalid+small{
+    display: inline;
+    color: red;
+}
+input{
+    display: block;
+}
+a{
+    color: black;
+}

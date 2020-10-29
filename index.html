@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="container  main-div min-vh-100 bg-light p-0">
+
+        <header style="grid-area: header;" class="alert-dark">
+            
+            <nav class="navbar navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <i class="fas fa-hat-wizard"></i>
+                    </a>
+
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+
+       <div style="grid-area: main;" class="component bg-light p-5 shadow">
+            <div class="m-3 d-flex flex-column align-items-center">
+                <label for="phone">Ваш телефон:</label>
+                <input 
+                id="phone" 
+                type="text"
+                placeholder="+38"
+                value="+38"
+                required 
+                pattern="^[+38]{3}[0-9]{10}|[+38]{3}[(]{1}[0-9]{3}[)]{1}[0-9]{7}|[+38]{3}[(]{1}[0-9]{3}[)][0-9]{3}[-]{1}[0-9]{2}[-]{1}[0-9]{2}$">
+                <small>*Обязательно к заполнению</small>
+                <small>Поле заполнено верно</small>
+                <div><button class="btn-outline-dark">Перезвонить мне</button></div>
+           </div>
+      </div>
+
+    </div>
+</body>
+</html>
